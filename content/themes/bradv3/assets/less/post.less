@@ -31,6 +31,45 @@
 	animation-name: slidein;
 }
 
+/* Koenig */
+
+.post-full-content .kg-width-wide .kg-image {
+	max-width: 1040px;
+  }
+  
+  
+  .kg-gallery-container {
+	display: flex;
+	flex-direction: column;
+	max-width: 1040px;
+	width: 100vw;
+  }
+  
+  .kg-gallery-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+  }
+  
+  .kg-gallery-image img {
+	display: block;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+  }
+  
+  .kg-width-full figcaption {
+	padding: 0 1.5em;
+  }
+
+.kg-image-card {
+	margin: .35em 0 1.618em 1.618em;
+    height: auto;
+    width: 55%;
+    max-width: 800px;
+    float: right;
+}
+
 @keyframes slidein {
 	from {
 		top: 50px;
@@ -62,7 +101,7 @@ article {
 		h3 {
 			font-size: 1.618em;
 		}
-		img {
+		img, .kg-card, .kg-image-card {
 			display: none;
 		}
 		blockquote {

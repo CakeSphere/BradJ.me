@@ -4,7 +4,7 @@ nav {
   border-bottom: 1px solid rgba(51,51,51,0.05);
   text-align: left;
   position: fixed;
-  transition: top 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
   height: 64px;
   top: 0;
   left: 0;
@@ -39,6 +39,56 @@ nav {
     }
   }
   &.nav-up {
-    top: -64px;
+    -webkit-transform: translateY(-64px);
+    transform: translateY(-64px);
   }
+}
+
+progress{
+  position:fixed;
+  left:0;
+  top:64px;
+  z-index:99999;
+  width:100%;
+  height:2px;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  border:none;
+  background-color:transparent;
+  color:#c5432a;
+}
+
+progress::-webkit-progress-bar{
+  background-color:transparent
+}
+progress::-webkit-progress-value{
+  background-color:#c5432a
+}
+progress::-moz-progress-bar{
+  background-color:#c5432a
+}
+.progress-container{
+  width:100%;
+  background-color:transparent;
+  position:fixed;
+  top:0;
+  left:0;
+  height:.05rem;
+  display:block
+}
+.progress-bar{
+  background-color:#c5432a;
+  width:50%;
+  display:block;
+  height:inherit
+}
+progress{
+  display:none
+}
+.post-template progress{
+  display:block
+}
+.page progress{
+  display:none
 }
