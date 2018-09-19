@@ -1,0 +1,7 @@
+{
+  "name": "bradv3",
+  "version": "0.0.1",
+  "author": { "email": "bradforddjohnson@gmail.com" },
+  "keywords": ["ghost-theme"],
+  "config": { "posts_per_page": 3 }
+}

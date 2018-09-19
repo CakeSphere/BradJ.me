@@ -1,0 +1,19 @@
+<nav>
+  <div class="nav-container">
+    <section class="social">
+
+    </section>
+    <ul>
+      {{#foreach navigation}}
+        <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation">
+          <a href="{{url absolute="true"}}" class="animsition-link">{{label}}</a>
+        </li>
+      {{/foreach}}
+    </ul>
+  </div>
+  <progress value="0" id="progressBar">
+    <div class="progress-container">
+      <span class="progress-bar"></span>
+    </div>
+  </progress>
+</nav>
