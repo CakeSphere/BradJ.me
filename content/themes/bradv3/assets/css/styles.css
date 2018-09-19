@@ -1987,12 +1987,24 @@ progress {
   font-weight: bold;
   font-size: 1em;
 }
-.pagination a {
+.pagination a.older-posts,
+.pagination a.newer-posts {
   border: none;
   color: #c5432a;
+  transition: 0.2s;
+  position: relative;
 }
-.pagination a:hover {
+.pagination a.older-posts:hover,
+.pagination a.newer-posts:hover {
   color: #9b3521;
+  transform: translateX(1rem);
+}
+.pagination a.newer-posts:hover {
+  transform: translateX(-1rem);
+}
+.pagination .link-container {
+  width: 60px;
+  display: inline-block;
 }
 .content {
   padding-top: 2em;

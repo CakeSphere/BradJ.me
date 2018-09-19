@@ -28,12 +28,22 @@
   font-family: @font-sans-serif;
   font-weight: bold;
   font-size: 1em;
-  a {
+  a.older-posts, a.newer-posts {
     border: none;
     color: @link-text;
+    transition: .2s;
+    position: relative;
     &:hover {
       color: darken(@link-text, 10%);
+      transform: translateX(1rem);
     }
+  }
+  a.newer-posts:hover {
+    transform: translateX(-1rem);
+  }
+  .link-container {
+    width: 60px;
+    display: inline-block;
   }
 }
 
