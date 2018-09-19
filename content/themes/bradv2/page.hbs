@@ -1,0 +1,110 @@
+{{!< default}}
+
+{{! This is a page template. A page outputs content just like any other post, and has all the same
+	attributes by default, but you can also customise it to behave differently if you prefer. }}
+
+<header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+	<div class="vertical">
+		<div class="main-header-content inner">
+			<h1 class="page-title">Case <br>Studies</h1>
+			<h2 class="page-description">
+				Below you will find my observations<span class="hidden-sm"> and reflections<br></span> on a number of projects that I've been <span class="hidden-sm">lucky <br>to be </span>a part of.
+			</h2>
+			<span class="clearfix"></span>
+		</div>
+	</div>
+</header>
+
+<main id="content" class="content" role="main">
+	{{!-- Hard-coded Work page --}}
+	<article class="{{post_class}}">
+		<div class="work-item">
+			<a href="https://bradj.me/hirepower/">
+				<img src="https://bradj.me/content/images/2016/10/hirepower-small.jpg" alt="HirePower">
+			</a>
+			<div class="work-details">
+				<h2><a href="https://bradj.me/hirepower/">HirePower</a></h2>
+				<ul>
+					<li>Sass <span class="ampersand">&amp;</span> CSS</li>
+					<li>Angular 2 <span class="ampersand">&amp;</span> Material</li>
+					<li>Branding <span class="ampersand">&amp;</span> Identity</li>
+				</ul>
+				<p>Working over a weekend with a small but talented team of developers, we created a platform for vetting and hiring new candidates. HirePower collects all of our information on a candidate in one place and provides a comprehensive method of evaluating each one.</p>
+				<div class="work-controls">
+					<a href="https://bradj.me/hirepower/">Read the Case Study</a>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="work-item">
+			<a href="https://bradj.me/threatbase/">
+				<img src="https://bradj.me/content/images/2016/09/booz-card.png" alt="Threatbase">
+			</a>
+			<div class="work-details">
+				<h2><a href="https://bradj.me/threatbase/">Threatbase</a></h2>
+				<ul>
+					<li>Less <span class="ampersand">&amp;</span> CSS</li>
+					<li>Angular</li>
+					<li>Branding <span class="ampersand">&amp;</span> Identity</li>
+				</ul>
+				<p>Working with Booz Allen Hamilton on Threatbase was a great opportunity to apply current consumer-centric design practices and personality to an application that might otherwise have felt very corporate.</p>
+				<div class="work-controls">
+					<a href="https://bradj.me/threatbase/">Read the Case Study</a>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="work-item">
+			<a href="https://bradj.me/aarp-innovation/">
+				<img src="https://bradj.me/content/images/2016/09/aarp-small.jpg" alt="AARP Innovation Ideas">
+			</a>
+			<div class="work-details">
+				<h2><a href="https://bradj.me/aarp-innovation/">Innovation Ideas</a></h2>
+				<ul>
+					<li>Sass <span class="ampersand">&amp;</span> CSS</li>
+					<li>Angular</li>
+					<li>Ionic</li>
+				</ul>
+				<p>We were able to help AARP continue to innovate and leverage its existing employees’ great ideas by building a mobile app and a desktop app that allow them to submit and view ideas.</p>
+				<div class="work-controls">
+					<a href="https://bradj.me/aarp-innovation/">Read the Case Study</a>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="work-item">
+			<img src="https://bradj.me/content/images/2016/09/hacks-small.jpg" data-featherlight="https://bradj.me//content/images/2016/09/hacks.jpg" alt="EAI Hacks">
+			<div class="work-details">
+				<h2 data-featherlight="https://bradj.me//content/images/2016/09/hacks.jpg" >EAI Hacks</h2>
+				<ul>
+					<li>Branding <span class="ampersand">&amp;</span> Concept</li>
+					<li>Illustrator</li>
+					<li>Photoshop</li>
+				</ul>
+				<p>I got the exciting opportunity to design a t-shirt for the 2016 EAI Hackathon. The globe in the logo recognizes our talented team of people from all over the world, and the gear represents the hard work we put in for the hackathons and in the course of our daily work.</p>
+				<div class="work-controls">
+					<a href="https://twitter.com/EAITECH/status/781235287678672896" target="_blank">See the Final Printed Shirt</a>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		{{!-- <div class="work-item">
+			<a href="https://bradj.me/johnson-co-a-case-study">
+				<img src="https://bradj.me/content/images/2016/04/johnson-small.jpg" alt="Johnson & Co.">
+			</a>
+			<div class="work-details">
+				<h2><a href="https://bradj.me/johnson-co-a-case-study">Johnson &amp; Co.</a></h2>
+				<ul>
+					<li>Sass <span class="ampersand">&amp;</span> CSS</li>
+					<li>HTML</li>
+					<li>Branding <span class="ampersand">&amp;</span> Identity</li>
+				</ul>
+				<p>Sometimes I like to step back from the projects I have at work and focus on something simpler for a little while. This is one of those times. In creating this simple site I learned a lot about branding for clothing sites, Foundation 5, and Sass. </p>
+				<div class="work-controls">
+					<a href="https://bradj.me/johnson-co-a-case-study">Read the Case Study</a> &mdash; <a href="https://test.bradj.me" title="">View the Site</a>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div> --}}
+	</article>
+</main>

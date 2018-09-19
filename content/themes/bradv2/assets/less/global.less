@@ -1,0 +1,210 @@
+
+::selection {
+  color: lighten(@primary-text, 33%);
+  background: none;
+}
+
+a {
+  text-decoration: none;
+  color: @link-text;
+  &:hover {
+    color: @link-text;
+  }
+  &::selection {
+    color: lighten(@link-text, 33%);
+  }
+  &:focus, &:active {
+    outline: none;
+  }
+}
+
+p {
+  margin-bottom: 0.618em;
+}
+
+body {
+  background: @background-light;
+  color: @primary-text;
+  font-family: @font-serif;
+  font-size: 30px;
+  height: 100%;
+}
+
+hr {
+  margin: 2em 0;
+  border-top: 1px solid rgba(51,51,51,0.05);
+}
+
+h2, h3 {
+  font-family: @font-sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  a:hover {
+    border-bottom: none;
+  }
+}
+
+h2 {
+  font-size: 2.618em;
+}
+
+h3 {
+  font-size: 1.618em;
+  margin: 1.618em 0 0.618em 0;
+}
+
+ol {
+  padding-left: 4rem;
+}
+
+pre {
+  line-height: 1.25;
+  font-size: 0.618em;
+  background: @background-dark;
+  border: none;
+  border-radius: 3px;
+}
+
+code {
+  font-family: @font-monospace;
+  background: darken(@background-light, 5%);
+  border: 1px solid darken(@background-light, 10%);
+}
+
+blockquote {
+  clear: both;
+  border-left: none;
+  margin: 1.75em 0;
+  padding: 0;
+  font-size: 1.618em;
+  line-height: 1.5;
+  font-family: @font-sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-top: 13px solid @primary-text;
+  border-bottom: 13px solid @primary-text;
+  p {
+    font-style: normal;
+    position: relative;
+    &:before { content: open-quote; position: absolute; top: 0; left: -24px; }
+    &:after { content: close-quote; }
+  }
+}
+
+.clearfix {
+  clear: both;
+}
+
+.hljs {
+  background: none;
+}
+
+.inner {
+  max-width: 1618px;
+  margin: 1.618em auto;
+}
+
+[data-featherlight] {
+  cursor: zoom-in;
+}
+
+.featherlight {
+  cursor: zoom-out;
+  &:last-of-type { background: fadeout(@background-dark, 10%); }
+  .featherlight-content {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background: none;
+    max-height: 100%;
+    border-bottom: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    right: -4px;
+    cursor: zoom-out;
+    img {
+      width: auto;
+      max-width: ~"calc(100% - 30px)";
+      background: #333;
+      height: auto;
+      position: absolute;
+      top: 15px;
+      left: 50%;
+      transform: translate(-50%,0);
+      cursor: zoom-out;
+      border: 15px solid #333;
+    }
+  }
+  .featherlight-close-icon {
+    font-family: @font-serif;
+    font-size: 0.618em;
+    background: none;
+    color: #fff;
+  }
+}
+
+.page-title {
+  font-family: @font-header;
+  font-size: 2.618em;
+  line-height: 1;
+  font-weight: 400;
+  margin-top: 20px;
+  text-align: left;
+  width: ~"calc(50% - 3.427rem)"; //6.854
+  margin-right: 3.427rem;
+  float: left;
+  letter-spacing: 0;
+}
+
+.page-description {
+  font-family: @font-serif;
+  font-size: 0.618em;
+  color: @primary-text;
+  text-align: left;
+  width: ~"calc(50% - 3.427rem)";
+  margin-left: 3.427rem;
+  text-transform: initial;
+  position: relative;
+  top: 2.618em;
+  float: left;
+}
+
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: url('../fonts/MonoSocialIconsFont-1.10.eot');
+    src: url('../fonts/MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MonoSocialIconsFont-1.10.woff') format('woff'),
+         url('../fonts/MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         url('../fonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: url('../fonts/MonoSocialIconsFont-1.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.symbol, a.symbol:before {
+    font-family: 'Mono Social Icons Font';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+a.symbol:before {
+    content: attr(title);
+    margin-right: 0.3em;
+    font-size: 130%;
+}
+
+a.symbol {
+    background: #9f9f9f;
+    padding: 7px 5px 3px 5px;
+    color: white;
+    text-decoration: none;
+}
